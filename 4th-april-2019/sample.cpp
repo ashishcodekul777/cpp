@@ -1,5 +1,5 @@
-#include<iostream.h>
-using namespae std;
+#include<iostream>
+using namespace std;
 int main()
 {
     cout<<"\n How to learn CPP"<<endl;
