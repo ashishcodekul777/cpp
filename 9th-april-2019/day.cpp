@@ -27,7 +27,7 @@ using namespace std;
         case 7:
          dayName="Saturday";
         default:
-         cout<<"\n Invalid User";
+         cout<<"\n Invalid Day number";
        }
       return dayName;
      }
