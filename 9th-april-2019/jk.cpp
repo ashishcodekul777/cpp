@@ -8,7 +8,7 @@ int getmax(int num1,int num2)
       result=num1;
     else
       result=num2;
-    return 0;
+    return result;
 }
 int main()
 {
