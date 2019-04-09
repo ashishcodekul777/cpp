@@ -9,6 +9,6 @@ double cube(double num)
 int main()
 {
     double answer=cube(5.0);
-    cout<<" answer";
+    cout<<" Answer=  "<<answer;
     return 0;
 }
