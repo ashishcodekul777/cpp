@@ -33,7 +33,7 @@ using namespace std;
      }
     int main()
     {
-        DayofWeek(7);
+        cout<<DayofWeek(7);
         return 0;
     }   
 
