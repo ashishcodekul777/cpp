@@ -35,7 +35,7 @@ class Triangle: public Shape {
       }
 };
 
-imt main()
+int main()
 {
    Shape *shape;
    Rectangle rect(10,7);
