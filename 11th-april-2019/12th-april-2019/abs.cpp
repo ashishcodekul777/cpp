@@ -4,7 +4,7 @@ using namespace std;
 class adder
 {
     public:
-      Adder(int i=0)
+      adder(int i=0)
       {
           total=i;
       }
