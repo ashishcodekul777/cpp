@@ -33,7 +33,7 @@ int main(void)
      cout<<"\n Total Area=  "<<Rect.getArea();
      return 0;
 }
-   
+
 
 
          
