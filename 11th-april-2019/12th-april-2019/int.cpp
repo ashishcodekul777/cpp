@@ -10,7 +10,7 @@ class shape
       }
       void setHeight(int h)
       {
-          height=h
+          height=h;
       }
     protected:
       int height;
