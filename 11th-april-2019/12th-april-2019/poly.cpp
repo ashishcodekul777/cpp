@@ -35,13 +35,14 @@ class Triangle: public Shape {
       }
 };
 
-int main() {
+imt main()
+{
    Shape *shape;
-   Rectangle rec(10,7);
-   Triangle  tri(10,5);
-   shape = &rec;
+   Rectangle rect(10,7);
+   Traingle Tri(10,3);
+   shape= &rect;
    shape->area();
-   shape = &tri;
+   shape= &tri;
    shape->area();
    return 0;
 }
