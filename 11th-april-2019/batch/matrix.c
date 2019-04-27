@@ -15,6 +15,8 @@ int main()
    for (c = 0; c < m; c++)
       for (d = 0 ; d < n; d++)
          printf("Sum of entered matrices:-\n");
+         printf("\n Subtraction of enterd matrices");
+         printf("\n Multiplication of entered matrices=");
    
    for (c = 0; c < m; c++)
    {
