@@ -11,7 +11,7 @@ int main()
 	}
     else
     {
-        printf("\n It's is a CONSONANT",ch);
+        printf("\n It's a CONSONANT",ch);
     }
    return 0;
 }
