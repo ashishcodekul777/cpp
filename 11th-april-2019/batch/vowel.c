@@ -7,13 +7,13 @@ int main()
     if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
 		ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
     {
-        printf("\n It's a VOWEL",ch);
+        printf("\n It's a VOWEL");
 	}
     else
     {
-        printf("\n It's a CONSONANT",ch);
+        printf("\n It's a CONSONANT");
     }
    return 0;
 }
-   
+
 
