@@ -26,8 +26,8 @@ int main()
          sub[c][d]=first[c][d] - second[c][d];
          mul[c][d]=first[c][d] * second[c][d];
          printf("%d\t", sum[c][d]);         
-         printf("%d\t", sum[c][d]);         
-         printf("%d\t", sum[c][d]);
+         printf("%d\t", sub[c][d]);         
+         printf("%d\t", mul[c][d]);
       }
        printf("\n");
    }
