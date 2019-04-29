@@ -14,7 +14,8 @@
    for (c = n - 1, d = 0; c >= 0; c--, d++)
       b[d] = a[c];
  
-   for (c = 0; c < n; c++)    a[c] = b[c];
+   for (c = 0; c < n; c++)    
+     a[c] = b[c];
      
        printf("Reverse array is\n");
      
