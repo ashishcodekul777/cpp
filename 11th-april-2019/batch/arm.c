@@ -19,4 +19,5 @@ int main()
         printf ("The given no is armstrong no");
     else
         printf ("The given no is not a armstrong no");
+    return 0;
 }
