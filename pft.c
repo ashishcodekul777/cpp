@@ -9,12 +9,12 @@ int main()
     scanf("%d %d", &n1, &n2);
     printf("Prime numbers between %d and %d are: ", n1, n2);
 
-    for(i=n1+1; i<n2; ++i)
+    for(i=n1+1; i<n2; i++)
     {
         flag = checkPrimeNumber(i);
 
         if(flag == 1)
-            printf("%d ",i);
+        printf("%d ",i);
     }
     return 0;
 }
@@ -22,7 +22,7 @@ int checkPrimeNumber(int n)
 {
     int j, flag = 1;
 
-    for(j=2; j <= n/2; ++j)
+    for(j=2; j <= n/2;  j++)
     {
         if (n%j == 0)
         {
