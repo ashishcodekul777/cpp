@@ -2,34 +2,48 @@
 #include<math.h>
 int main()
 {
-   int m,n,c,d,first[10][10],second[10][10],sum[10][10],sub[10][10],mul[10][10];
-   printf("Enter the number of rows and columns of matrix\n");
-   scanf("%d%d", &m, &n);
-   printf("Enter the elements of first matrix\n");
-   for (c = 0; c < m; c++)
-    for (d = 0; d < n; d++)
-         scanf("%d", &first[c][d]);
- 
-   printf("Enter the elements of second matrix\n");
- 
-   for (c = 0; c < m; c++)
-      for (d = 0 ; d < n; d++)
-         printf("Sum of entered matrices:-\n");
-         printf("\n Subtraction of enterd matrices");
-         printf("\n Multiplication of entered matrices=");
+ int i, j, rows, columns, a[10][10], b[10][10];
+ int Addition[10][10],Subtraction[10][10],Multiplication[10][10];
+  
+ printf("\nPlease Enter Number of rows and columns\n");
+ scanf("%d %d", &i, &j);
+ printf("\nPlease Enter the First Array Elements\n");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(columns = 0;columns < j;columns++)
+    {
+      scanf("%d", &a[rows][columns]);
+    }
+  }
    
-   for (c = 0; c < m; c++)
-   {
-      for (d = 0 ; d < n; d++)
-      {
-         sum[c][d]=first[c][d] + second[c][d];
-         sub[c][d]=first[c][d] - second[c][d];
-         mul[c][d]=first[c][d] * second[c][d];
-         printf("%d\t", sum[c][d]);         
-         printf("%d\t", sub[c][d]);         
-         printf("%d\t", mul[c][d]);
-      }
-       printf("\n");
-   }
-   return 0;
-}
+ printf("\nPlease Enter the Second Array Elements\n");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(columns = 0;columns < j;columns++)
+    {
+      scanf("%d", &b[rows][columns]);
+    }
+  }
+  
+ for(rows = 0; rows < i; rows++)
+  {
+   for(columns = 0;columns < j;columns++)
+    {
+      Addition[rows][columns] = a[rows][columns] + b[rows][columns];  
+      Subtraction[rows][columns] = a[rows][columns] - b[rows][columns];  
+      Multiplication[rows][columns] = a[rows][columns] * b[rows][columns];  
+    }
+  }
+
+printf("\nAdd\t Sub\t Multi\t Div\t Mod");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(columns = 0; columns < j; columns++)
+    {
+      printf("\n%d \t ", Addition[rows][columns]);
+      printf("%d \t ", Subtraction[rows][columns]);
+      printf("%d \t ", Multiplication[rows][columns]);
+    }
+  }
+ return 0;
+} 
