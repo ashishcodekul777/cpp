@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-void main()
+#include<math.h>
+int main()
 {
     int arr1[100], n,ctr=0;
     int i, j, k; 
@@ -38,6 +38,7 @@ void main()
         }
     }
        printf("\n\n");
+       return 0;
 }
 
 
