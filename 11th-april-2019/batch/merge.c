@@ -1,5 +1,5 @@
 #include<stdio.h>
- 
+#include<stdlib.h>
 int main() 
 {
     int arr1[30], arr2[30], res[60];
