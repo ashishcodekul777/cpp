@@ -6,7 +6,6 @@ int main()
 {
     int source[MAX_SIZE], dest[MAX_SIZE];
     int i, size;
-
     printf("Enter the size of the array : ");
     scanf("%d", &size);
     printf("Enter elements of source array : ");
