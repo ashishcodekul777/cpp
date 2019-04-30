@@ -35,7 +35,7 @@ int main()
     }
   }
 
-printf("\nAdd\t Sub\t Multi\t Div\t Mod");
+printf("\nAdd\t Sub\t Multi\t");
  for(rows = 0; rows < i; rows++)
   {
    for(columns = 0; columns < j; columns++)
