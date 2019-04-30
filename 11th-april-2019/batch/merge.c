@@ -55,7 +55,7 @@ int main()
  printf("\nMerged array is :");
   for (i = 0; i < n1 + n2; i++)
     printf("%d ", res[i]);
-   return (0);
+    return (0);
  }
 
 
