@@ -1,46 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX_SIZE 100
-char * removeBlanks(const char * str);
-int main()
-{
-    char str[MAX_SIZE];
-    char * newString;
-    printf("Enter any string: ");
-    gets(str);
-    printf("\nString before removing blanks: \n'%s'", str);
-    newString = removeBlanks(str);
-    printf("\n\nString after removing blanks: \n'%s'", newString);
-    return 0;
-}
-char * removeBlanks(const char * str)
-{
-    int i, j;
-    char * newString;
-
-    newString = (char *)malloc(MAX_SIZE);
-
-    i = 0;
-    j = 0;
-
-    while(str[i] != '\0')
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main()
     {
-        if(str[i] == ' ')
-        {
-            newString[j] = ' ';
-            j++;
-
-            while(str[i] == ' ')
-                i++;
-        }
-
-        newString[j] = str[i];
-
-        i++;
-        j++;
+       char text[100], blank[100];
+       int c = 0, d = 0;
+     
+       printf("Enter some text\n");
+       scanf("%s",text);
+     
+       while (text[c] != '\0')
+       {
+          if (!(text[c] == ' ' && text[c+1] == ' '))
+          {
+            blank[d] = text[c];
+            d++;
+          }
+          c++;
+       }
+       blank[d] = '\0';
+       printf("Text after removing blanks\n%s\n", blank);
+       return 0;
     }
-    newString[j] = '\0';
-
-    return newString;
-}
-
+     
