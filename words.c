@@ -1,29 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX_SIZE 100
-
 int main()
 {
-    char str[MAX_SIZE];
-    int i, words;
-
-    printf("Enter any string: ");
-    scanf("%s",str);
-
-    i = 0;
-    words = 1;
-
-    while(str[i] != '\0')
+    char s[200];
+    int count = 0, i;
+    printf("Enter the string\n");
+    scanf("%s",s);
+    for (i = 0;s[i] != '\0';i++)
     {
-        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
-        {
-            words++;
-        }
 
-        i++;
+        if (s[i] == ' ')
+          count++;    
     }
-
-    printf("Total number of words = %d", words);
-
+    printf("number of words in given string are: %d\n", count + 1);
     return 0;
 }
