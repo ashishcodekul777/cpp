@@ -12,7 +12,6 @@ int main()
     scanf("%s",apple);
     printf("\n Enter the nos of watermelons=");
     scanf("%s",watermelon);
-    c=banana+apple+watermelon;
     printf("\n\t The nos of fruits=%d",c);
     return 0;
 }
