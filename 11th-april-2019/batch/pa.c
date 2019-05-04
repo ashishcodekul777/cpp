@@ -1,66 +1,85 @@
 #include<stdio.h>
+#include<math.h>
 #include<stdlib.h>
-int prime(int n)
-{
-  int c=0;
-  for(int i=1;i<=n;i++)
-  {
-    if(n%i==0)
-    ++c;
-  }
-   if(c==2)
-     return 1;
-   else
-     return 0;
-}
-int armstrong(int n)
-{
-  int dgt, sum=0,a=n;
- while(n!=0)
- {
-    dgt=n % 10;
-    sum=sum+(dgt*dgt*dgt);
-    n=n/10;
- }
-  if(sum==a)
-   return 1;
-  else
-   return 0;
-}
-
-int perfect(int n)
-{
-  int sum=0;
-for(int i=1;i<=n-1;i++)
-{
-  if(n%i==0)
-  sum=sum+i;
-}
-  if(sum==n)
-   return 1;
-  else
-   return 0;
-}
+int isPrime(int num);
+int isArmstrong(int num);
+int isPerfect(int num);
 
 int main()
 {
-  int num;
-  printf(“\n Enter any number”);
-  scanf(“%d”,&num);
-
-  if(prime(num))
-    printf(“\n It is prime number=%d ”, num);
-  else
-    printf(“\n It is not a prime number=%d”, num);
-
-   if(armstrong(num))
-     printf(“\n It is armstrong number=%d ”, num);
-   else
-     printf(“\n It is not armstrong number=%d ”, num);
-
-   if(perfect(num))
-     printf(“\n It is perfect number=%d”, num);
-   else
-     printf(“\n It is not perfect number=%d ”,num);
-    return 0;
+    int num;
+    
+    printf("Enter any number: ");
+    scanf("%d", &num);
+    if(isPrime(num))
+    {
+       printf("%d is Prime number.\n", num);
+    }
+    else
+    {
+        printf("%d is not Prime number.\n", num);
+    }
+    if(isArmstrong(num))
+    {
+        printf("%d is Armstrong number.\n", num);
+    }
+    else
+    {
+        printf("%d is not Armstrong number.\n", num);
+    }
+    if(isPerfect(num))
+    {
+        printf("%d is Perfect number.\n", num);
+    }
+    else
+    {
+        printf("%d is not Perfect number.\n", num);
+    } 
+}    
+int isPrime(int num) 
+{
+    int i;
+    
+    for(i=2; i<=num/2; i++)  
+    {   
+        if(num%i == 0)  
+        {
+            return 0;
+        }  
+    } 
+    
+    return 1; 
 }
+int isArmstrong(int num) 
+{
+    int lastDigit, sum, originalNum, cube;
+    sum = 0;
+    
+    originalNum = num;
+    while(num > 0)
+    {
+        lastDigit = num % 10;
+        cube=lastDigit^3;
+        sum=sum+cube;
+        num = num / 10;
+    }
+    
+    return (originalNum == sum);
+}
+int isPerfect(int num) 
+{
+    int i, sum, n;
+    sum = 0;
+    n = num;
+    
+    for(i=1; i<n; i++)  
+    {  
+        if(n%i == 0)  
+        {  
+            sum += i;  
+        }  
+    }
+    return (num == sum);
+}
+
+ 
