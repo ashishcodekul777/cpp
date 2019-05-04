@@ -1,23 +1,21 @@
-#include <stdio.h>
-#include <math.h>
- 
-int main()
-{
-    int number, sum = 0, rem = 0, cube = 0, temp;
- 
-    printf ("Enter a number=");
-    scanf("%d", &number);
-    temp = number;
-    while (number != 0)
-    {
-        rem = number % 10;
-        cube = rem^3;
-        sum = sum + cube;
-        number = number / 10;
-    }
-     if (sum == temp)
-        printf ("The given no is armstrong no");
-    else
-        printf ("The given no is not a armstrong no");
-    return 0;
-}
+#include<stdio.h> 
+#include<math.h>
+int main()    
+{    
+  int n,r,sum=0,temp;    
+  printf("Enter the number=");    
+  scanf("%d",&n);    
+  temp=n;    
+while(n>0)    
+{    
+  r=n%10;    
+  sum=sum+(r*r*r);    
+  n=n/10;    
+}    
+  if(temp==sum)
+    printf("It's an armstrong  number ");    
+   else    
+    printf("It's not an armstrong number");    
+    return 0;  
+}   
+    
