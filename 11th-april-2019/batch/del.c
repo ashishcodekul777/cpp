@@ -6,7 +6,8 @@ int main()
   int n, a[100], b[100], count = 0, c, d;
  
   printf("Enter number of elements in array\n");
-  scanf("%d", &n);printf("Enter %d integers\n", n);
+  scanf("%d", &n);
+  printf("Enter %d integers\n", n);
  
   for (c = 0; c < n; c++)
     scanf("%d", &a[c]);
