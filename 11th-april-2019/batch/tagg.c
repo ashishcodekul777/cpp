@@ -1,32 +1,21 @@
 #include<stdio.h>
-#include<string.h>
 #include<stdlib.h>
 int main()
 {
-  	char str[100], ch;
-  	int i, len, j;
+    char  str[100];
+    int   c;
  
-  	printf("\n Please Enter any String= ");
-  	scanf("%s",str);
-  	
-  	printf("\n Please Enter the Character that you want to Remove=  ");
-  	scanf("%c", &ch);
-  	
-	len = strlen(str);
-	   	
-  	for(i = 0; i < len; i++)
-	{
-		if(str[i] == ch)
-		{
-			for(j = i; j < len; j++)
-			{
-				str[j] = str[j + 1];
-			}
-			len--;
-			i--;	
-		} 
-	}	
-	printf("\n The Final String after Removing All Occurrences of %c = %s ", ch, str);
-	
-  	return 0;
+    printf("Enter a string= ");
+    scanf("%s",str);
+
+    for(c=0;  str[c]!='\0';  c++)
+    {
+        if(str[c]>='A' && str[c]<='Z')
+            str[c]=str[c]+32;   
+        else if(str[c]>='a' && str[c]<='z')
+            str[c]=str[c]-32;   
+    }
+ 
+    printf("String after toggle each character = %s",str);
+    return 0;
 }
