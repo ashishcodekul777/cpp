@@ -2,17 +2,17 @@
 #include<stdlib.h>
 int main()
 {
-   char str[1000], ch[];
-   int i, frequency = 0;
+   char str[1000], ch[10];
+   int i, frequency;
 
    printf("Enter a string= ");
    scanf("%s",str);
    printf("Enter a character to find the frequency= ");
-   scanf("%c",&ch);
+   scanf("%s",ch);
 
    for(i = 0; str[i] != '\0'; ++i)
    {
-       if(ch == str[i])
+       if(ch == '\0')
            ++frequency;
    }
 
