@@ -1,0 +1,30 @@
+
+Name: as 
+Marks=65 
+
+Name: df 
+Marks=98 
+
+Name: fg 
+Marks=56 
+
+Name: ss 
+Marks=47 
+
+Name: tt 
+Marks=99 
+
+Name: hg 
+Marks=78 
+
+Name: ty 
+Marks=67 
+
+Name: vb 
+Marks=56 
+
+Name: jkl 
+Marks=77 
+
+Name: uy 
+Marks=89 
