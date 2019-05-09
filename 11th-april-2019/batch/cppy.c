@@ -25,6 +25,7 @@ int main()
       pt--;
    }
    printf("\n\n");
+   return 0;
 }
 
 
