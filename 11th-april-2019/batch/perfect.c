@@ -10,8 +10,8 @@ int main()
   while(i<n)
   {
       if(n%i==0)
-           sum=sum+i;
-          i++;
+        sum=sum+i;
+        i++;
   }
   if(sum==n)
       printf("%d is a perfect number",i);
